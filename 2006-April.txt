@@ -1,0 +1,38 @@
+From chiselwright at berlios.de  Thu Apr  6 11:54:14 2006
+From: chiselwright at berlios.de (Chisel Wright)
+Date: Thu, 6 Apr 2006 10:54:14 +0100
+Subject: [Parley-announce] Parley is still alive
+Message-ID: <20060406095414.GB11923@herlpacker.co.uk>
+
+Just to let you (all) know that Parley is still alive and well.
+
+I took a small break to focus on some model photography and to take a
+short holiday, but now I'm back and semi-actively looking at Parley
+again.
+
+In the last day or two I've:
+
+ - exported the Parley section of my home repository to the project at
+   Berlios [https://developer.berlios.de/svn/?group_id=5999]
+ - totally reinstalled perl, and upgraded to Catalyst 5.66 and
+   DBIx::Class 0.6.0
+ - modified a small amount of code so that logged in user work properly
+   with the latest DBIx::Class
+ - checked in a number of outstanding updates
+ - added a mailing list for SVN commit messages
+
+I've not reached a point where I'm happy enough to roll-out 0.09, but
+Parley hasn't been abandoned.
+
+Regards,
+
+Chisel
+-- 
+Chisel Wright
+e: chisel at herlpacker.co.uk
+w: http://www.herlpacker.co.uk/
+
+This is not an automated signature. I type this in to the bottom of every
+message. 
+
+

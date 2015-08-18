@@ -1,0 +1,52 @@
+From chiselwright at berlios.de  Thu May 11 21:56:21 2006
+From: chiselwright at berlios.de (Chisel Wright)
+Date: Thu, 11 May 2006 20:56:21 +0100
+Subject: [Parley-announce] Parley 0.09
+Message-ID: <20060511195621.GC11201@herlpacker.co.uk>
+
+It's been a while, but I've got to a point where I feel able to make
+another release.
+
+The one to watch out for the the schema change - not an issue if you are
+starting fresh, but if you have any users you will find it problematic
+if email addresses are not unique.
+
+Parley 0.09 Changes:
+    - make email column unique
+	  ** this may cause problems if you already have a large amount of user data **
+	- added lost password functionality in
+	  Controller::User::LostPassword
+	- factored signup functionality out into Controller::User::SignUp
+	- start moving towards use of <fieldset> instead of <table> for form
+	  layout
+	- use a floating loginbox instead of a separate screen (as inspired
+	  by calendarhub.com)
+	- added visual feedback when TZ preference is updated
+	- show time-formatting sample in my/preferences
+	- store the referer when visiting my/preferences making it easier to
+	  return to where we were previously
+	- added about/modules, an easier way to obtain version information
+	  for loaded modules
+	- modify log-in check in auto() to use Auth::DBIC calling style
+	- use ConfigLoader plugin to load application config
+	- add authed_user() function, and alter instances of
+	  $c->session->{authed_user} accordingly
+	- added new function to Parley::App::Helper -
+	  application_email_address()
+	- update dependencies/versions in Makefile.PL
+	- added Template::Plugin::ForumCode (not all BBCode functionality is
+	  complete yet)
+	- use ForumCode plugin to process various display elements
+	- email from-address for emails is now set in config file
+	- new helper function application_email_address()
+	- small layout fixes
+	- change name of session file
+	- ammend statusbar and post-edit templating to work correctly with
+	  new storage location of authed_user object
+
+Chisel
+-- 
+Chisel Wright
+w: http://www.herlpacker.co.uk/
+
+
